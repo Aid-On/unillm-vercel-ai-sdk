@@ -36,5 +36,8 @@
     "@cloudflare/workers-types": {
       "optional": true
     }
+  },
+  "overrides": {
+    "jsondiffpatch": "0.7.6"
   }
 }
