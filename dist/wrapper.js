@@ -1,12 +1,8 @@
-"use strict";
 /**
  * Vercel AI SDK LanguageModelV1 wrapper
  *
  * Wraps @aid-on/unillm's edge-native functions to provide AI SDK compatibility
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.getModel = getModel;
-exports.createFallbackChain = createFallbackChain;
 // import { parseModelSpec } from "@aid-on/unillm";
 // =============================================================================
 // AI SDK LanguageModelV1 Wrapper
@@ -26,7 +22,7 @@ exports.createFallbackChain = createFallbackChain;
  * });
  * ```
  */
-function getModel(_spec, _credentials) {
+export function getModel(_spec, _credentials) {
     // TODO: Re-enable when external dependencies are available
     throw new Error("getModel is temporarily disabled - external AI SDK dependencies not available");
     // const { provider, model } = parseModelSpec(spec);
@@ -35,7 +31,7 @@ function getModel(_spec, _credentials) {
 /**
  * Create a fallback chain for multiple models (AI SDK compatible)
  */
-function createFallbackChain(_options) {
+export function createFallbackChain(_options) {
     // TODO: Re-enable when external dependencies are available
     throw new Error("createFallbackChain is temporarily disabled - external AI SDK dependencies not available");
     // const { models, credentials } = options;
