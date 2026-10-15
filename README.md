@@ -9,7 +9,7 @@
 <br />
 
 <h3><b>unillm-vercel-ai-sdk</b> - AI SDK Compatibility for Edge-Native LLM</h3>
-<p align="center"><b>Bridge the gap between edge-native and ecosystem.</b><br/>Vercel AI SDK wrapper for @aid-on/unillm with LanguageModelV1 compatibility.</p>
+<p align="center"><b>Bridge the gap between edge-native and ecosystem.</b><br/>Vercel AI SDK wrapper for @aid-on/unillm with LanguageModelV2 compatibility.</p>
 
 <br/>
 
@@ -24,7 +24,7 @@
 This package wraps the edge-native `@aid-on/unillm` library to provide Vercel AI SDK compatibility. Use this when:
 
 - **Migrating existing AI SDK code** to edge-native architecture
-- **Need LanguageModelV1 interface** for compatibility with AI SDK ecosystem
+- **Need LanguageModelV2 interface** for compatibility with AI SDK ecosystem
 - **Want edge optimization** without rewriting all your AI SDK calls
 
 For new projects, consider using `@aid-on/unillm` directly for better edge performance.
@@ -166,7 +166,7 @@ const retryResult = await withRetry(
 
 | Export | Description |
 |--------|------------|
-| `getModel(spec, credentials)` | Create a LanguageModelV1 instance from a model spec |
+| `getModel(spec, credentials)` | Create a LanguageModelV2 instance from a model spec |
 | `createFallbackChain(options)` | Create a fallback chain across multiple providers |
 
 ### Re-exported from @aid-on/unillm

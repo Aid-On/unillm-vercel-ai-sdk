@@ -2,7 +2,7 @@
  * @aid-on/unillm-vercel-ai-sdk
  *
  * Vercel AI SDK wrapper for @aid-on/unillm
- * Provides LanguageModelV1 compatibility for existing AI SDK codebases
+ * Provides LanguageModelV2 compatibility for existing AI SDK codebases
  *
  * @example
  * ```typescript

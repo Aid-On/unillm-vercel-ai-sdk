@@ -1,14 +1,14 @@
 /**
- * Vercel AI SDK LanguageModelV1 wrapper
+ * Vercel AI SDK LanguageModelV2 wrapper
  *
  * Wraps @aid-on/unillm's edge-native functions to provide AI SDK compatibility
  */
 // import { parseModelSpec } from "@aid-on/unillm";
 // =============================================================================
-// AI SDK LanguageModelV1 Wrapper
+// AI SDK LanguageModelV2 Wrapper
 // =============================================================================
 /**
- * Get a Vercel AI SDK LanguageModelV1 instance from a ModelSpec
+ * Get a Vercel AI SDK LanguageModelV2 instance from a ModelSpec
  *
  * @example
  * ```typescript
