@@ -1,5 +1,5 @@
 /**
- * Vercel AI SDK LanguageModelV1 wrapper
+ * Vercel AI SDK LanguageModelV2 wrapper
  *
  * Wraps @aid-on/unillm's edge-native functions to provide AI SDK compatibility
  */
@@ -8,7 +8,7 @@
 // import { createGroq } from "@ai-sdk/groq";
 // import { createGoogleGenerativeAI } from "@ai-sdk/google";
 // import { createWorkersAI } from "workers-ai-provider";
-import type { LanguageModelV1 } from "ai";
+import type { LanguageModelV2 } from "@ai-sdk/provider";
 import type {
   ModelSpec,
   // ParsedModelSpec,
@@ -19,11 +19,11 @@ import type {
 // import { parseModelSpec } from "@aid-on/unillm";
 
 // =============================================================================
-// AI SDK LanguageModelV1 Wrapper
+// AI SDK LanguageModelV2 Wrapper
 // =============================================================================
 
 /**
- * Get a Vercel AI SDK LanguageModelV1 instance from a ModelSpec
+ * Get a Vercel AI SDK LanguageModelV2 instance from a ModelSpec
  *
  * @example
  * ```typescript
@@ -37,7 +37,7 @@ import type {
  * });
  * ```
  */
-export function getModel(_spec: ModelSpec | string, _credentials: Credentials): LanguageModelV1 {
+export function getModel(_spec: ModelSpec | string, _credentials: Credentials): LanguageModelV2 {
   // TODO: Re-enable when external dependencies are available
   throw new Error("getModel is temporarily disabled - external AI SDK dependencies not available");
   
@@ -65,7 +65,7 @@ export interface FallbackChainOptions {
 /**
  * Create a fallback chain for multiple models (AI SDK compatible)
  */
-export function createFallbackChain(_options: FallbackChainOptions): LanguageModelV1[] {
+export function createFallbackChain(_options: FallbackChainOptions): LanguageModelV2[] {
   // TODO: Re-enable when external dependencies are available
   throw new Error("createFallbackChain is temporarily disabled - external AI SDK dependencies not available");
   

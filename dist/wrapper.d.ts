@@ -1,12 +1,12 @@
 /**
- * Vercel AI SDK LanguageModelV1 wrapper
+ * Vercel AI SDK LanguageModelV2 wrapper
  *
  * Wraps @aid-on/unillm's edge-native functions to provide AI SDK compatibility
  */
-import type { LanguageModelV1 } from "ai";
+import type { LanguageModelV2 } from "@ai-sdk/provider";
 import type { ModelSpec, Credentials } from "@aid-on/unillm";
 /**
- * Get a Vercel AI SDK LanguageModelV1 instance from a ModelSpec
+ * Get a Vercel AI SDK LanguageModelV2 instance from a ModelSpec
  *
  * @example
  * ```typescript
@@ -20,7 +20,7 @@ import type { ModelSpec, Credentials } from "@aid-on/unillm";
  * });
  * ```
  */
-export declare function getModel(_spec: ModelSpec | string, _credentials: Credentials): LanguageModelV1;
+export declare function getModel(_spec: ModelSpec | string, _credentials: Credentials): LanguageModelV2;
 export interface FallbackChainOptions {
     /** Model specs in order of preference */
     models: ModelSpec[];
@@ -36,5 +36,5 @@ export interface FallbackChainOptions {
 /**
  * Create a fallback chain for multiple models (AI SDK compatible)
  */
-export declare function createFallbackChain(_options: FallbackChainOptions): LanguageModelV1[];
+export declare function createFallbackChain(_options: FallbackChainOptions): LanguageModelV2[];
 //# sourceMappingURL=wrapper.d.ts.map
