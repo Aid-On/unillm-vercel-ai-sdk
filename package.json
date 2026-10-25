@@ -21,13 +21,13 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@aid-on/unillm": "^0.5.5",
-    "@ai-sdk/provider": "^2.0.5"
+    "@ai-sdk/provider": "^2.0.5",
+    "@aid-on/unillm": "^0.5.5"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
     "typescript": "^5.7.2",
-    "vitest": "^4.1.11"
+    "vitest": "^4.1.12"
   },
   "peerDependencies": {
     "@cloudflare/workers-types": "^4.0.0"
